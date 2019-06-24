@@ -5,7 +5,7 @@ public class Satan {
 	private int hp;
 	
 	private Satan() {
-		hp = 10000;		
+		hp = 100;		
 	}
 
 	public static Satan getInstance() {
