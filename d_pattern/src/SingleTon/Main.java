@@ -2,23 +2,20 @@ package SingleTon;
 
 public class Main {
 
-public static void main(String[] args) {
-
-Satan satan1 = Satan.getInstance();
-Satan satan2 = Satan.getInstance();
-Satan satan3 = Satan.getInstance();
-
-System.out.println(satan1);
-System.out.println(satan2);
-System.out.println(satan3);
-
-System.out.println(satan1.getHp());
-System.out.println(satan2.getHp());
-
-satan1.setHp(1000);
-
-System.out.println(satan1.getHp());
-System.out.println(satan2.getHp());
-System.out.println(satan3.getHp());
+	public static void main(String[] args) {
+		
+	Satan satan1 = Satan.getInstance(); //satan1이라는 인스턴스를 호출함
+	Satan satan2 = Satan.getInstance(); //2도 호출
+	
+	satan1.setHp(50); //satan1 인스턴스에 hp를 입력
+	
+	System.out.println(satan1.getHp()); //1,2를 출력함
+	System.out.println(satan2.getHp()); 
+	
+	satan2.setHp(33); //이번엔 satan2 인스턴스에 hp를 입력
+	
+	System.out.println(satan1.getHp());	//1,2를 출력함
+	System.out.println(satan2.getHp()); 	
+	
 	}
 }
