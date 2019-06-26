@@ -4,9 +4,13 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-	Satan satan1 = Satan.getInstance(); //satan1이라는 인스턴스를 호출함
+//		int i;
+//		float f;
+//		Sartan s;
+//		s.setHp(10)
+	Satan satan1 = Satan.getInstance(); //satan1이라는 메소드를호출해서 인스턴스생성한다
 	Satan satan2 = Satan.getInstance(); //2도 호출
-	
+	satan1.aaa = 1000;
 	satan1.setHp(50); //satan1 인스턴스에 hp를 입력
 	
 	System.out.println(satan1.getHp()); //1,2를 출력함
